@@ -111,6 +111,10 @@
   padding: 10px;
   background-color: #2B2A33;
 }
+.added-task .checkbox {
+  background-color: #2B2A33;
+  border: #e58181;
+}
 .added-task .task-in-list {
   background-color: #2B2A33;
 }
