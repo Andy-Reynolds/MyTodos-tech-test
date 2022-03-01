@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 .nav-bar .logo {
   font-size: 24px;
@@ -46,6 +46,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .main #welcome-message {
   font-size: 48px;
@@ -62,6 +64,9 @@
 #second-screen {
   flex-direction: column;
   align-items: center;
+}
+#second-screen #instructions {
+  color: #6C6A7C;
 }
 #second-screen #task-list-container {
   display: block;
