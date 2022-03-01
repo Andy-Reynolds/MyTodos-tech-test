@@ -68,6 +68,26 @@
 #second-screen #instructions {
   color: #6C6A7C;
 }
+#second-screen #add-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  height: 40px;
+  border: dashed #6C6A7C 2px;
+  border-radius: 5px;
+  background-color: #2B2A33;
+  padding: 5px;
+}
+#second-screen #add-task #task-input {
+  border: none;
+}
+#second-screen #add-task #add-task-button {
+  width: 28px;
+  border-radius: 100rem;
+  font-weight: bold;
+  text-align: center;
+}
 #second-screen #task-list-container {
   display: block;
 }
