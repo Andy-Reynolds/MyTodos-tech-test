@@ -21,10 +21,18 @@
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  margin-bottom: 150px;
+
+  
 
   #reset-button {
     background-image: linear-gradient(180deg, #e1a0a0, #e58181);
     box-shadow: 0 10px 40px #6b3838;
+    border: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
 
     &:hover {
       background-image: linear-gradient(180deg, #e2c1c1, #ea8282);
