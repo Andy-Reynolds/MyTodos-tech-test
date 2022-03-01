@@ -86,6 +86,7 @@
     border-radius: 5px;
     background-color: #2B2A33;
     padding: 5px;
+    margin-bottom: 20px;
 
 
     #task-input {
@@ -102,11 +103,23 @@
 
   }
 
-  #task-list-container {
+  .task-list-container {
     display: block;
+    width: 80%;
+    
+    #task-header {
+      
+    }
+  
+    #list-of-tasks {
+     
+    }
+  
   }
-
+  
 }
+
+
 
 .added-task {
   display: flex;
