@@ -8,10 +8,10 @@ var secondScreen = document.getElementById("second-screen");
 var taskInput = document.getElementById("task-input");
 var addTaskButton = document.getElementById("add-task-button");
 var listOfTasks = document.getElementById("list-of-tasks");
-var taskMessage = document.getElementById("task-message"); // const body = document.getElementById("body");
-// const originalHtml = body.innerHTML;
-// const resetButton = document.getElementById("reset-button");
-// Functions
+var taskMessage = document.getElementById("task-message");
+var body = document.getElementById("body");
+var originalHtml = body.innerHTML;
+var resetButton = document.getElementById("reset-button"); // Functions
 
 var changeWelcomeMessage = function changeWelcomeMessage() {
   var name = nameInput.value;
@@ -26,13 +26,14 @@ var updateTaskList = function updateTaskList() {
   taskMessage.style.display = "none";
   var task = taskInput.value;
   listOfTasks.innerHTML += "<div class=\"added-task\">\n    <input type=\"checkbox\">\n    <p>".concat(task, "</p>\n    <button>edit</button>\n  </div>");
-}; // const resetPage = () => {
-//   console.log("reset button");
-//   body.innerHTML = originalHtml;
-//   taskInput.reset();
-//   nameInput.reset();
-// };
-// Logic
+};
+
+var resetPage = function resetPage() {
+  console.log("reset button");
+  body.innerHTML = originalHtml;
+  taskInput.reset();
+  nameInput.reset();
+}; // Logic
 
 
 confirmNameButton.addEventListener("click", changeWelcomeMessage);
