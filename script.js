@@ -28,9 +28,9 @@ const updateTaskList = () => {
   let task = taskInput.value;
   listOfTasks.innerHTML += 
   `<div class="added-task">
-    <input type="checkbox">
-    <p>${task}</p>
-    <button>edit</button>
+    <input class="checkbox" type="checkbox">
+    <p class="task-in-list">${task}</p>
+    <button class="edit-button">edit</button>
   </div>`
 }
 

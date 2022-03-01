@@ -25,7 +25,7 @@ var updateTaskList = function updateTaskList() {
   // console.log("I've been updated");
   taskMessage.style.display = "none";
   var task = taskInput.value;
-  listOfTasks.innerHTML += "<div class=\"added-task\">\n    <input type=\"checkbox\">\n    <p>".concat(task, "</p>\n    <button>edit</button>\n  </div>");
+  listOfTasks.innerHTML += "<div class=\"added-task\">\n    <input class=\"checkbox\" type=\"checkbox\">\n    <p class=\"task-in-list\">".concat(task, "</p>\n    <button class=\"edit-button\">edit</button>\n  </div>");
 };
 
 var resetPage = function resetPage() {

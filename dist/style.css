@@ -108,4 +108,15 @@
   display: flex;
   justify-content: space-between;
   margin: 5px;
+  padding: 10px;
+  background-color: #2B2A33;
+}
+.added-task .task-in-list {
+  background-color: #2B2A33;
+}
+.added-task .edit-button {
+  background-image: linear-gradient(180deg, #e1a0a0, #e58181);
+  border: none;
+  padding: 5px;
+  color: black;
 }
