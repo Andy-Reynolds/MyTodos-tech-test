@@ -9,7 +9,8 @@ const addTaskButton = document.getElementById("add-task-button");
 const listOfTasks = document.getElementById("list-of-tasks");
 const taskMessage = document.getElementById("task-message");
 
-const originalHtml = document.getElementById("original-html");
+const body = document.getElementById("body");
+const originalHtml = body.innerHTML;
 const resetButton = document.getElementById("reset-button");
 
 // Functions
@@ -34,8 +35,11 @@ const updateTaskList = () => {
 }
 
 const resetPage = () => {
-  console.log("reset button")
-}
+  console.log("reset button");
+  body.innerHTML = originalHtml;
+  taskInput.reset();
+  nameInput.reset();
+};
 
 
 

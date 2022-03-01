@@ -9,7 +9,8 @@ var taskInput = document.getElementById("task-input");
 var addTaskButton = document.getElementById("add-task-button");
 var listOfTasks = document.getElementById("list-of-tasks");
 var taskMessage = document.getElementById("task-message");
-var originalHtml = document.getElementById("original-html");
+var body = document.getElementById("body");
+var originalHtml = body.innerHTML;
 var resetButton = document.getElementById("reset-button"); // Functions
 
 var changeWelcomeMessage = function changeWelcomeMessage() {
@@ -29,6 +30,9 @@ var updateTaskList = function updateTaskList() {
 
 var resetPage = function resetPage() {
   console.log("reset button");
+  body.innerHTML = originalHtml;
+  taskInput.reset();
+  nameInput.reset();
 }; // Logic
 
 
