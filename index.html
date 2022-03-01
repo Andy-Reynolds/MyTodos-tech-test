@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/style.css">
+  <script src="script.js" defer></script>
+  <title>MyTodos Tech Test</title>
+</head>
+<body>
+
+  <div class="nav-bar">
+    <div class="logo">MyTodos</div>
+    <div class="button-container">
+      <button id="reset-button" class="button">reset</button>
+    </div>
+  </div>
+
+
+  <div class="main">
+    <div id="welcome-message">What is your Name?</div>
+    <div class="information-message"></div>
+    <input type="text" id="name-input" class="input">
+    <button id="confirm-name" class="button">Confirm</button>
+
+    <br>
+
+    <div id="second-screen" style="display: none;">
+      <p id="instructions">Let’s enter the tasks we need to complete for this upcoming week. Just use the input below to create a todo.</p>
+
+      <br>
+
+      <input type="text" id="task-input" value="Add your task here" class="input">
+      <button id="add-task-button" class="button">+</button>
+    
+      <br>
+
+      <div class="task-list-container">
+        <h5>Tasks</h5>
+        <div id="list-of-tasks">
+          <p id="task-message">All tasks have been completed. Great job!</p>
+          <br>
+          <!-- <div class="added-task">
+            <input type="checkbox">
+            <p>This is my task</p>
+            <button>edit</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+</body>
+</html>

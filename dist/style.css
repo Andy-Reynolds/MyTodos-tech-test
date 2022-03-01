@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #232229;
+  color: white;
+  font-family: jost;
+}
+
+.input {
+  background-color: #2B2A33;
+}
+
+.button {
+  background-color: #E58181;
+  color: black;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.nav-bar #reset-button {
+  background-image: linear-gradient(180deg, #e1a0a0, #e58181);
+  box-shadow: 0 10px 40px #6b3838;
+}
+.nav-bar #reset-button:hover {
+  background-image: linear-gradient(180deg, #e2c1c1, #ea8282);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#second-screen {
+  flex-direction: column;
+  align-items: center;
+}
+#second-screen #task-list-container {
+  display: block;
+}
+
+.added-task {
+  display: flex;
+  justify-content: space-evenly;
+}
