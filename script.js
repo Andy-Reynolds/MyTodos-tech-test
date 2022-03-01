@@ -9,6 +9,9 @@ const addTaskButton = document.getElementById("add-task-button");
 const listOfTasks = document.getElementById("list-of-tasks");
 const taskMessage = document.getElementById("task-message");
 
+const originalHtml = document.getElementById("original-html");
+const resetButton = document.getElementById("reset-button");
+
 // Functions
 const changeWelcomeMessage = () => {
   let name = nameInput.value;
@@ -30,9 +33,15 @@ const updateTaskList = () => {
   </div>`
 }
 
+const resetPage = () => {
+  console.log("reset button")
+}
+
 
 
 // Logic
 confirmNameButton.addEventListener("click", changeWelcomeMessage);
 
 addTaskButton.addEventListener("click", updateTaskList);
+
+resetButton.addEventListener("click", resetPage);

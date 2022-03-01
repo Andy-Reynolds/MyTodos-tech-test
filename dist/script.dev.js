@@ -8,7 +8,9 @@ var secondScreen = document.getElementById("second-screen");
 var taskInput = document.getElementById("task-input");
 var addTaskButton = document.getElementById("add-task-button");
 var listOfTasks = document.getElementById("list-of-tasks");
-var taskMessage = document.getElementById("task-message"); // Functions
+var taskMessage = document.getElementById("task-message");
+var originalHtml = document.getElementById("original-html");
+var resetButton = document.getElementById("reset-button"); // Functions
 
 var changeWelcomeMessage = function changeWelcomeMessage() {
   var name = nameInput.value;
@@ -23,8 +25,13 @@ var updateTaskList = function updateTaskList() {
   taskMessage.style.display = "none";
   var task = taskInput.value;
   listOfTasks.innerHTML += "<div class=\"added-task\">\n    <input type=\"checkbox\">\n    <p>".concat(task, "</p>\n    <button>edit</button>\n  </div>");
+};
+
+var resetPage = function resetPage() {
+  console.log("reset button");
 }; // Logic
 
 
 confirmNameButton.addEventListener("click", changeWelcomeMessage);
 addTaskButton.addEventListener("click", updateTaskList);
+resetButton.addEventListener("click", resetPage);
